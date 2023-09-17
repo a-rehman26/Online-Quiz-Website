@@ -1,0 +1,208 @@
+/* Reset some default styles */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    /* Dark theme background color */
+    color: #fff;
+    /* Text color */
+    padding: 10px 20px;
+}
+
+.nav-left .logo {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    /* Logo color */
+}
+
+.nav-center ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-center ul li {
+    margin-right: 20px;
+}
+
+.nav-center ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-center ul li a {
+    text-decoration: none;
+    color: #fff;
+    /* Link color */
+    transition: color 0.3s ease;
+    /* Smooth link color transition */
+}
+
+.nav-center ul li a:hover {
+    color: #FF5733;
+    /* Change link color on hover */
+}
+
+.neon {
+    cursor: pointer;
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #0ff,
+        0 0 80px #0ff,
+        0 0 90px #0ff,
+        0 0 100px #0ff,
+        0 0 150px #0ff;
+}
+
+/* Add a background image */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8) url('images/b.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: darken;
+    height: 91.1vh;
+    font-family: Arial, sans-serif;
+}
+
+.custom-btn {
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: 1px solid gray;
+    outline: #333;
+}
+
+/* 14 */
+.btn-14 {
+    position: relative;
+    color: #00aced;
+    border: none;
+    z-index: 2;
+}
+
+.btn-14:before,
+.btn-14:after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    border: 1px solid;
+
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.btn-14:before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #00aced;
+    border-left-color: #00aced;
+}
+
+.btn-14:after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #00aced;
+    border-right-color: #00aced;
+}
+
+.btn-14:hover:before,
+.btn-14:hover:after {
+    border-color: #00aced;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 5px #00aced, 0 0 5px #00aced inset;
+}
+
+/* Add your coding-related text here */
+
+/* Add this CSS code to your existing CSS file or in a <style> tag in the <head> section */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #333;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.quiz-option:hover {
+    text-decoration: none;
+    background-color: #00aced;
+}
+
+.cancel-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #777;
+    /* Dark grey color for the cancel button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cancel-button:hover {
+    background-color: #555;
+    /* Slightly darker grey color on hover */
+}
